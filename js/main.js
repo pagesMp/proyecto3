@@ -51,11 +51,20 @@ class fruta {
        this.daño=daño;
     }
 
-    atack() {
+    pelea() {
        
-        this.life -= this.daño;
-
-        this.daño=functions.random(5,15);
+        this.daño=functions.random(this.daño, this.daño*3);
+        this.vida -= this.daño;
     
     }
 };
+
+let fruta1 = new fruta("pepino", 250, 5);
+let fruta2 = new fruta("sandia", 250, 5);
+
+const luchaFrutas =() => {
+
+    fruta1.pelea()
+    fruta2.pelea()
+
+}
