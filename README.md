@@ -12,4 +12,4 @@ elige un luchador para el y el otro sera para la máquina y se hara un combate a
 
 HTML CSS Y JS
 
- 
+  https://pagesmp.github.io/proyecto3/
