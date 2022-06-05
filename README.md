@@ -10,9 +10,9 @@ elige un luchador para el y el otro sera para la máquina y se hara un combate a
 
 ## LUCHADORES
 
-![pepino1](https://user-images.githubusercontent.com/105350447/170957564-872e7069-d743-4198-b7bd-c5c1863d34c3.png)
 
-![sandia](https://user-images.githubusercontent.com/105350447/170957597-7f746666-9f14-4353-ab73-222ba485d265.png)
+![pepino_fighter](https://user-images.githubusercontent.com/105350447/172063613-44a7080a-9c43-49be-b705-eb1fb379d2f8.jpg)![sandia_figther](https://user-images.githubusercontent.com/105350447/172063617-f88d6eb4-f95c-4498-a1e3-0a644650a0f7.png)
+
 
 
 ## lenguajes 
