@@ -10,12 +10,14 @@ elige un luchador para el y el otro sera para la máquina y se hara un combate a
 
 ## LUCHADORES
 
+<<<<<<< HEAD
 <img src="/pepino_fighter.jpg/> 
   
 <img src="/sandia_fighter.png/>
 
 ## lenguajes 
 
+
 HTML CSS Y JS
 
- 
+  https://pagesmp.github.io/proyecto3/
