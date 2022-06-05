@@ -8,6 +8,12 @@ elige un luchador para el y el otro sera para la máquina y se hara un combate a
 
 ---
 
+## LUCHADORES
+
+<img src="/pepino_fighter.jpg/> 
+  
+<img src="/sandia_fighter.png/>
+
 ## lenguajes 
 
 HTML CSS Y JS

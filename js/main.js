@@ -7,6 +7,8 @@
 //     }
 // document.querySelector(".container"+view).hidden=false;
 
+//cambio de pantallas
+
 const saltarPantalla = (change) => {
 
     let elegirPantalla = change; 
@@ -23,6 +25,8 @@ const saltarPantalla = (change) => {
 
 }
 
+//funcion de selecion de luchador
+
 const selectFruit = (fruit) => { 
 
     let frutaElegida = fruit;
@@ -34,56 +38,60 @@ const selectFruit = (fruit) => {
 
 }
 
+// generación un random para los daños
 function obtenerNumeroRandom(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-
+//atributos luchadores
 class fruta {
 
-    constructor(nombre, vida, daño) {
+    constructor(nombre, vida, dano) {
        this.nombre= nombre;
        this.vida=vida;
-       this.daño=daño;
+       this.dano=dano;
        this.ganador=false;
     }
 
+    
     pelea() {
-       
-        this.daño=obtenerNumeroRandom(this.daño, this.daño*3);
-        this.vida -= this.daño;
-        console.log(this.daño, this.vida);
+                             
+        this.dano=obtenerNumeroRandom(this.dano, this.dano*3);
+        this.vida -= this.dano;
+        console.log(this.dano, this.vida);
     
     }
 };
 
-let fruta1 = new fruta("pepino", 250, 5);
-let fruta2 = new fruta("sandia", 250, 250);
+let fruta1 = new fruta("pepino", 100, 5);
+let fruta2 = new fruta("sandia", 100, 5);
 
-const luchaFrutas =() => {
-    
-    
-    while (fruta1.vida > 0 || fruta2.vida > 0)
-    {
-        fruta1.pelea();
+
+//funcion que nos dice quien ha ganado la pelea
+const luchaFrutas = () => {
+      
+    while (fruta1.vida > 0 || fruta2.vida > 0){
+
         fruta2.pelea();
+        fruta1.pelea();
     }
-
+    
     if(fruta1.vida <= 0){
 
         saltarPantalla("pantallaVictoria");
         fruta1.ganador=true;
         let ganador= document.getElementById("ganador");
-        ganador.innerHTML="<p>El ganador es el Pepino</p>";
+        ganador.innerHTML="<center><p>El ganador es el Pepino</p></center>";
 
-   }else if(fruta2.vida <= 0){
+    }else if(fruta2.vida <= 0){
 
         saltarPantalla("pantallaVictoria");
         fruta2.ganador=true;
         let ganador= document.getElementById("ganador");
-        ganador.innerHTML="<p>El ganador es la Sandia</p>";
+        ganador.innerHTML="<center><p>El ganador es la Sandia</p></center>";
 
     }else{
+
         console.log(fruta1.vida, fruta2.vida);
         saltarPantalla("pantallaVictoria");
         let ganador= document.getElementById("ganador");

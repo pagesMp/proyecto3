@@ -9,35 +9,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- primera pantalla -->
     <section id="pantallaInicial" class="pantallas">
         <div class="designPantallaInicial1">
-            <div class="boton" onclick= "saltarPantalla('pantallaSelecion');"><center>START</center></div>
+            <div class="boton" onclick= "saltarPantalla('pantallaSelecion');"></div>
     </div>
-        
+       <!-- segunda pantalla --> 
     </section>
-
     <section id="pantallaSelecion" class="pantallas" style="display:none">
         <div class="designPantallaSelecion2">
-        <div class="pepino"  onclick= "selectFruit('pepino');"></div>
-        <div class="sandia" onclick= "selectFruit('sandia');"></div>
+        <div class="pepino" img src="img/pepino_fighter.jpg"   onclick= "selectFruit('pepino');"></div>
+        <div class="sandia" img src="img/sandia_figther.png"  onclick= "selectFruit('sandia');"></div>
     </div>
-            
+          
     </section>
-
     <section id="pantallaLucha" class="pantallas" style="display:none">
         <div class="designPantallaLucha">
        
     </div>
-            
+         <!-- quarta pantalla -->   
     </section>
-
     <section id="pantallaVictoria" class="pantallas" style="display:none">
         <div class="designPantallaVictoria">
-            <p id="ganador"></p>
-    </div>
-            
+            <div class="victorioso">
+                <p id="ganador"></p>
+            </div>
+        </div>
+        
     </section>
-
 
     <script src="/js/main.js"></script>
 </body>
